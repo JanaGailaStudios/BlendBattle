@@ -281,6 +281,7 @@ export function mediaTag(file, { className = '', controls = true, alt = '' } = {
 }
 export function mediaSrcKind(url = '', mime = '') {
   if ((mime || '').startsWith('video')) return 'video';
+  if (/^data:video\//i.test(url)) return 'video';
   if (/\.(mp4|webm)(\?|$)/i.test(url)) return 'video';
   return 'image';
 }

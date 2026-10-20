@@ -11,6 +11,26 @@ else's entries and climb from Beginner to Blender Legend.
 > opponents in Quick Play are clearly-labelled simulated bots. Not affiliated with the
 > Blender Foundation.
 
+## Live demo (GitHub Pages)
+
+**https://janagailastudios.github.io/BlendBattle/**
+
+GitHub Pages can only serve static files, so `docs/` contains a browser-only edition of the
+same app: `public/js/static-backend.js` implements the whole API in the visitor's browser,
+with accounts, lobbies, matches, voting and moderation stored in `localStorage` and uploads
+held as data URLs in memory. Timers are compressed ~10× so a full match takes about a minute.
+Nothing is sent anywhere.
+
+Rebuild that edition after changing the front-end:
+
+```bash
+cd blend-battles
+npm run build:static     # regenerates /docs from public/
+```
+
+Pages is configured to publish `main` → `/docs` (Settings → Pages). The Node server below is
+the "real" version with a JSON database, SSE and on-disk uploads.
+
 ## Quick start
 
 Requirements: **Node.js 18+**. There are **no npm dependencies** — the server is built on the
@@ -84,8 +104,8 @@ Deleting `data/db.json` makes the server reseed a fresh demo database on next bo
 
 ## Deploying
 
-**GitHub Pages cannot host this** — it only serves static files, and Blend Battles needs the
-Node server for auth, uploads, match timers and voting. Use any Node host instead:
+**The full server cannot run on GitHub Pages** (static hosting only) — use the static
+edition described above for that. To host the real thing, use any Node host:
 
 ```bash
 docker build -t blend-battles blend-battles

@@ -189,6 +189,8 @@ function matchSummaryFor(match, userId) {
     players: match.players.length, place,
     score: res && res.entries.find((e) => e.userId === userId) ? res.entries.find((e) => e.userId === userId).avgScore : null,
     renderUrl: mySub && mySub.files.render ? publicRenderUrl(mySub) : null,
+    proofUrl: mySub && mySub.files.proof ? `/api/media/${mySub.id}/proof` : null,
+    proofKind: mySub && mySub.files.proof && (mySub.files.proof.mime || '').startsWith('video') ? 'video' : 'image',
     submissionId: mySub ? mySub.id : null,
     practice: !!match.practice,
   };
@@ -246,6 +248,7 @@ function serializeEntry(sub, match, viewer, opts = {}) {
     : sub.userId === viewer?.id;
   return {
     submissionId: sub.id,
+    matchId: match.id,
     username: owner ? owner.username : sub.username,
     displayName: teamLabel(match, sub) || (owner ? owner.username : sub.username),
     avatarHue: owner ? owner.avatarHue : 260,
@@ -257,6 +260,7 @@ function serializeEntry(sub, match, viewer, opts = {}) {
     hasProof: !!(sub.files.proof),
     hasModel: !!(sub.files.model),
     proofUrl: sub.files.proof ? `/api/media/${sub.id}/proof` : null,
+    proofKind: sub.files.proof && (sub.files.proof.mime || '').startsWith('video') ? 'video' : 'image',
     isSelf: !!ownTeam,
     canVote: !!opts.voting && !ownTeam && !sub.disqualified,
     myVote: myVote ? myVote.score : 0,
@@ -350,6 +354,7 @@ function serializeMatch(match, viewer, opts = {}) {
         return {
           ...e,
           proofUrl: sub && sub.files.proof ? `/api/media/${e.submissionId}/proof` : null,
+          proofKind: sub && sub.files.proof && (sub.files.proof.mime || '').startsWith('video') ? 'video' : 'image',
           reviewStatus: sub ? sub.reviewStatus : 'clear',
           disqualified: sub ? !!sub.disqualified : false,
         };
@@ -1449,6 +1454,7 @@ route('GET', '/api/gallery', async (ctx) => {
         renderUrl: publicRenderUrl(s),
         renderKind: (s.files.render.mime || '').startsWith('video') ? 'video' : 'image',
         proofUrl: `/api/media/${s.id}/proof`,
+        proofKind: s.files.proof && (s.files.proof.mime || '').startsWith('video') ? 'video' : 'image',
         hasModel: !!s.files.model,
         modelUrl: s.files.model ? `/api/media/${s.id}/model` : null,
         username: owner ? owner.username : s.username,
@@ -1506,7 +1512,10 @@ route('GET', '/api/users/:id', async (ctx) => {
       return {
         submissionId: s.id, theme: m ? m.theme : '', mode: m ? m.modeName : '', renderUrl: publicRenderUrl(s),
         renderKind: (s.files.render.mime || '').startsWith('video') ? 'video' : 'image',
-        proofUrl: `/api/media/${s.id}/proof`, score: s.avgScore || 0, place: m && m.results ? (m.results.entries.find((e) => e.submissionId === s.id) || {}).place : null,
+        proofUrl: s.files.proof ? `/api/media/${s.id}/proof` : null,
+        proofKind: s.files.proof && (s.files.proof.mime || '').startsWith('video') ? 'video' : 'image',
+        hasModel: !!s.files.model,
+        modelUrl: s.files.model ? `/api/media/${s.id}/model` : null, score: s.avgScore || 0, place: m && m.results ? (m.results.entries.find((e) => e.submissionId === s.id) || {}).place : null,
         endedAt: m ? m.endedAt : s.submittedAt,
       };
     });
@@ -1568,7 +1577,18 @@ route('GET', '/api/home', async (ctx) => {
     m.results.entries.slice(0, 2).forEach((e) => {
       if (featured.length >= 6 || seen.has(e.submissionId)) return;
       seen.add(e.submissionId);
-      featured.push({ ...e, theme: m.theme, mode: m.modeName, matchId: m.id });
+      const featuredSub = getSubmission(e.submissionId);
+      featured.push({
+        ...e,
+        theme: m.theme,
+        mode: m.modeName,
+        matchId: m.id,
+        proofUrl: featuredSub && featuredSub.files.proof ? `/api/media/${featuredSub.id}/proof` : null,
+        proofKind: featuredSub && featuredSub.files.proof && (featuredSub.files.proof.mime || '').startsWith('video') ? 'video' : 'image',
+        hasModel: !!(featuredSub && featuredSub.files.model),
+        modelUrl: featuredSub && featuredSub.files.model ? `/api/media/${featuredSub.id}/model` : null,
+        proofFile: undefined,
+      });
     });
   });
   const winners = finished.slice(0, 5).map((m) => ({

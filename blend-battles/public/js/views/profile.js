@@ -184,7 +184,7 @@ export default async function profile(root, params) {
   function historyRow(m) {
     return `<div class="history-row">
       <div class="place-chip ${m.place && m.place <= 3 ? 'place-chip--' + m.place : ''}">${m.place ? '#' + m.place : '—'}</div>
-      <img class="mini-render" src="${esc(m.renderUrl || '/img/logo.png')}" alt="" loading="lazy" />
+      <img class="mini-render" src="${esc(m.renderUrl || 'img/logo.png')}" alt="" loading="lazy" />
       <div style="flex:1;min-width:0">
         <b style="font-size:13px">${esc(m.theme)}</b>
         <div class="note">${esc(m.modeName)} · ${timeAgo(m.endedAt)} · ${m.players} players</div>
@@ -322,10 +322,12 @@ export default async function profile(root, params) {
       } catch (err) { toast(err.message, { type: 'error' }); }
     }));
     body.querySelectorAll('[data-proofsub]').forEach((b) => b.addEventListener('click', () => {
+      const id = b.dataset.proofsub;
+      const known = [...(data.matches || []), ...(data.creations || [])].find((x) => x.submissionId === id) || {};
       openEntryLightbox({
-        submissionId: b.dataset.proofsub,
-        proofUrl: `/api/media/${b.dataset.proofsub}/proof`,
-        renderUrl: `/api/media/${b.dataset.proofsub}/render`,
+        submissionId: id,
+        proofUrl: known.proofUrl || null,
+        renderUrl: known.renderUrl || null,
         username: u.username, rank: u.rank, avatarHue: u.avatarHue,
         title: 'Match entry', canReport: false,
       }, {});

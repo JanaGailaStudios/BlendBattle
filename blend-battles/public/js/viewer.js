@@ -6,8 +6,8 @@ function loadThree() {
   if (!threePromise) {
     threePromise = Promise.all([
       import('three'),
-      import('/vendor/OrbitControls.js'),
-      import('/vendor/GLTFLoader.js'),
+      import('three/addons/OrbitControls.js'),
+      import('three/addons/GLTFLoader.js'),
     ]).then(([THREE, controls, loader]) => ({ THREE, OrbitControls: controls.OrbitControls, GLTFLoader: loader.GLTFLoader }));
   }
   return threePromise;

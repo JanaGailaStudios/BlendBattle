@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blend Battles — Create. Render. Compete.</title>
+<meta name="description" content="Blend Battles is a competitive arena for Blender artists. Get a random theme, model it in Blender, prove your work with a viewport capture, then battle for votes and climb the ranks." />
+<meta name="theme-color" content="#0a0a0f" />
+<link rel="icon" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/logo.png" />
+<link rel="stylesheet" href="css/main.css" />
+<script type="importmap">
+{ "imports": { "three": "vendor/three.module.min.js", "three/addons/": "vendor/" } }
+</script>
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--purple"></div>
+  <div class="bg-glow bg-glow--blue"></div>
+  <div class="bg-glow bg-glow--orange"></div>
+  <div class="bg-noise"></div>
+</div>
+
+<div id="boot" class="boot">
+  <div class="boot__cube">
+    <span class="boot__face f1"></span><span class="boot__face f2"></span>
+    <span class="boot__face f3"></span><span class="boot__face f4"></span>
+    <span class="boot__face f5"></span><span class="boot__face f6"></span>
+  </div>
+  <div class="boot__title">BLEND BATTLES</div>
+  <div class="boot__sub">Create. Render. Compete.</div>
+  <div class="boot__bar"><i></i></div>
+</div>
+
+<div class="demo-banner" id="demoBanner" hidden>
+  <span class="demo-banner__dot"></span>
+  <strong>Demo mode.</strong>
+  <span id="demoBannerText">Local demo server — accounts, uploads, votes and moderation are real and stored on this machine. Opponents you meet in Quick Play are clearly-labelled simulated bots; there is no cloud backend, no email verification and no multi-device sync.</span>
+  <button class="demo-banner__btn" id="demoBannerMore" type="button">What's simulated?</button>
+  <button class="demo-banner__x" id="demoBannerClose" type="button" aria-label="Dismiss demo notice">×</button>
+</div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#/" aria-label="Blend Battles home">
+      <span class="brand__mark"><img src="img/logo.png" alt="" width="40" height="40" /></span>
+      <span class="brand__text">
+        <span class="brand__name">BLEND <em>BATTLES</em></span>
+        <span class="brand__tag">Create · Render · Compete</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/play" data-nav="play">Play</a>
+      <a href="#/gallery" data-nav="gallery">Gallery</a>
+      <a href="#/leaderboard" data-nav="leaderboard">Leaderboard</a>
+      <a href="#/profile" data-nav="profile">Profile</a>
+    </nav>
+
+    <div class="nav__right">
+      <button class="icon-btn" id="soundToggle" type="button" title="Toggle sound effects" aria-label="Toggle sound effects">
+        <span class="icon-btn__on">🔊</span>
+      </button>
+      <div class="online-pill" id="onlinePill" title="Players online (demo data)">
+        <span class="online-pill__dot"></span><span id="onlineCount">—</span> online
+      </div>
+      <div class="auth-slot" id="authSlot"></div>
+      <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="view" class="view" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="img/logo.png" alt="Blend Battles logo" width="56" height="56" />
+      <div>
+        <div class="footer__title">BLEND BATTLES</div>
+        <div class="footer__tag">Your creativity. Your model. Your battle.</div>
+      </div>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h4>Compete</h4>
+        <a href="#/play">Find a lobby</a>
+        <a href="#/play?mode=build">Build Battle</a>
+        <a href="#/play?mode=animation">Animation Battles</a>
+        <a href="#/play?mode=speed">Speed Modeling</a>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <a href="#/gallery">Gallery</a>
+        <a href="#/leaderboard">Leaderboard</a>
+        <a href="#/tournaments">Tournaments</a>
+        <a href="#/mod">Moderation</a>
+      </div>
+      <div>
+        <h4>Fair play</h4>
+        <a href="#/rules">Competition rules</a>
+        <a href="#/rules#proof">What counts as proof</a>
+        <a href="#/rules#limits">Limits of proof</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__base">
+    <span>© <span id="year"></span> Blend Battles — a demo project. Not affiliated with the Blender Foundation.</span>
+    <span class="footer__mode" id="footerMode">Demo mode</span>
+  </div>
+</footer>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+<div class="modal-root" id="modalRoot" hidden></div>
+<canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+<div class="drop-overlay" id="dropOverlay" hidden><div>Drop your file to upload</div></div>
+
+<script src="js/static-backend.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
