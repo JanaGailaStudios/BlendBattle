@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blend Battles — Create. Render. Compete.</title>
+<meta http-equiv="refresh" content="0; url=docs/" />
+<script>location.replace('docs/' + location.hash);</script>
+<style>
+  html, body { margin: 0; height: 100%; background: #0a0a0f; color: #e7e7f0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; display: grid; place-items: center; }
+  a { color: #a78bfa; }
+  .box { text-align: center; }
+  .bar { width: 160px; height: 3px; border-radius: 2px; margin: 14px auto 0;
+    background: linear-gradient(90deg, transparent, #a78bfa, transparent); animation: pulse 1.2s infinite; }
+  @keyframes pulse { 0%,100% { opacity: .35 } 50% { opacity: 1 } }
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1 style="letter-spacing:.2em;font-size:18px;margin:0">BLEND BATTLES</h1>
+    <p style="font-size:13px;color:#9aa2b8">Opening the arena…</p>
+    <div class="bar"></div>
+    <p style="font-size:12px;color:#6b7280">If nothing happens, <a href="docs/">continue to the demo</a>.</p>
+  </div>
+</body>
+</html>
