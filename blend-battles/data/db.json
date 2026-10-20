@@ -1,0 +1,1725 @@
+{
+ "meta": {
+  "version": 1,
+  "seeded": true,
+  "createdAt": 1792498291647
+ },
+ "users": [
+  {
+   "id": "usr_88aa45400e7907bfc5",
+   "username": "NovaKite",
+   "email": "novakite@blendbattles.demo",
+   "rank": {
+    "name": "Blender Legend",
+    "min": 12000,
+    "color": "#ffd166",
+    "icon": "♛"
+   },
+   "xp": 14210,
+   "level": 57,
+   "region": "EU",
+   "location": "Riga, LV",
+   "isMod": true,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 192,
+   "bio": "Community moderator. Reviews proof, kills invalid votes, keeps the ladder honest.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter",
+    "legend-track",
+    "moderator"
+   ],
+   "stats": {
+    "wins": 16,
+    "matches": 34,
+    "podiums": 20,
+    "votes": 474,
+    "avgScore": 4.3
+   },
+   "friends": [
+    "usr_b336ff8eef933f3182",
+    "usr_e941780cf573ded3be",
+    "usr_1f65b21de105deda97"
+   ],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1775218291705,
+   "lastSeen": 1792497922406,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_b336ff8eef933f3182",
+   "username": "polyPunk",
+   "email": "polypunk@blendbattles.demo",
+   "rank": {
+    "name": "Master",
+    "min": 8000,
+    "color": "#ff4d6d",
+    "icon": "✦"
+   },
+   "xp": 11890,
+   "level": 48,
+   "region": "EU",
+   "location": "Berlin, DE",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 286,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter",
+    "legend-track"
+   ],
+   "stats": {
+    "wins": 14,
+    "matches": 29,
+    "podiums": 17,
+    "votes": 396,
+    "avgScore": 4.1
+   },
+   "friends": [
+    "usr_88aa45400e7907bfc5"
+   ],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1775995891705,
+   "lastSeen": 1792497709137,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_e941780cf573ded3be",
+   "username": "vertexVixen",
+   "email": "vertexvixen@blendbattles.demo",
+   "rank": {
+    "name": "Master",
+    "min": 8000,
+    "color": "#ff4d6d",
+    "icon": "✦"
+   },
+   "xp": 9640,
+   "level": 39,
+   "region": "NA",
+   "location": "Austin, US",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 294,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter",
+    "legend-track"
+   ],
+   "stats": {
+    "wins": 13,
+    "matches": 25,
+    "podiums": 14,
+    "votes": 321,
+    "avgScore": 4.3
+   },
+   "friends": [
+    "usr_88aa45400e7907bfc5"
+   ],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1776773491705,
+   "lastSeen": 1792497703182,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_1f65b21de105deda97",
+   "username": "modvex",
+   "email": "modvex@blendbattles.demo",
+   "rank": {
+    "name": "Master",
+    "min": 8000,
+    "color": "#ff4d6d",
+    "icon": "✦"
+   },
+   "xp": 8300,
+   "level": 34,
+   "region": "EU",
+   "location": "Tallinn, EE",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 10,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter",
+    "legend-track"
+   ],
+   "stats": {
+    "wins": 9,
+    "matches": 23,
+    "podiums": 12,
+    "votes": 277,
+    "avgScore": 4.4
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1777551091705,
+   "lastSeen": 1792497882232,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_77e9c7158fd66c9ca1",
+   "username": "subdivSam",
+   "email": "subdivsam@blendbattles.demo",
+   "rank": {
+    "name": "Expert",
+    "min": 5200,
+    "color": "#ff8a3d",
+    "icon": "★"
+   },
+   "xp": 7210,
+   "level": 29,
+   "region": "NA",
+   "location": "Toronto, CA",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 222,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter"
+   ],
+   "stats": {
+    "wins": 9,
+    "matches": 21,
+    "podiums": 10,
+    "votes": 240,
+    "avgScore": 4.2
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1778328691705,
+   "lastSeen": 1792498187039,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_a9896cf223a0e77252",
+   "username": "GreyscaleGoblin",
+   "email": "greyscalegoblin@blendbattles.demo",
+   "rank": {
+    "name": "Expert",
+    "min": 5200,
+    "color": "#ff8a3d",
+    "icon": "★"
+   },
+   "xp": 6480,
+   "level": 26,
+   "region": "EU",
+   "location": "Lisbon, PT",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 317,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter"
+   ],
+   "stats": {
+    "wins": 9,
+    "matches": 15,
+    "podiums": 9,
+    "votes": 216,
+    "avgScore": 4.4
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1779106291706,
+   "lastSeen": 1792498277756,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_84408acb6f1c83bc89",
+   "username": "BloomShift",
+   "email": "bloomshift@blendbattles.demo",
+   "rank": {
+    "name": "Artist",
+    "min": 3200,
+    "color": "#b06bff",
+    "icon": "◓"
+   },
+   "xp": 5120,
+   "level": 21,
+   "region": "APAC",
+   "location": "Seoul, KR",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 168,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter"
+   ],
+   "stats": {
+    "wins": 6,
+    "matches": 13,
+    "podiums": 7,
+    "votes": 171,
+    "avgScore": 3.6
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1779883891706,
+   "lastSeen": 1792498130864,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_d27000447d87569504",
+   "username": "NurbsNerd",
+   "email": "nurbsnerd@blendbattles.demo",
+   "rank": {
+    "name": "Artist",
+    "min": 3200,
+    "color": "#b06bff",
+    "icon": "◓"
+   },
+   "xp": 4380,
+   "level": 18,
+   "region": "EU",
+   "location": "Warsaw, PL",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 318,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter"
+   ],
+   "stats": {
+    "wins": 6,
+    "matches": 12,
+    "podiums": 6,
+    "votes": 146,
+    "avgScore": 4.6
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1780661491706,
+   "lastSeen": 1792498137683,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_d973e42b693d15064d",
+   "username": "claymoreKid",
+   "email": "claymorekid@blendbattles.demo",
+   "rank": {
+    "name": "Artist",
+    "min": 3200,
+    "color": "#b06bff",
+    "icon": "◓"
+   },
+   "xp": 3610,
+   "level": 15,
+   "region": "NA",
+   "location": "Chicago, US",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 240,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular",
+    "podium-hunter"
+   ],
+   "stats": {
+    "wins": 6,
+    "matches": 12,
+    "podiums": 5,
+    "votes": 120,
+    "avgScore": 3.2
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1781439091706,
+   "lastSeen": 1792497645851,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_bdab165f321ae9f0e4",
+   "username": "RuneRigger",
+   "email": "runerigger@blendbattles.demo",
+   "rank": {
+    "name": "Modeler",
+    "min": 1600,
+    "color": "#4fd1c5",
+    "icon": "◒"
+   },
+   "xp": 2980,
+   "level": 12,
+   "region": "EU",
+   "location": "Utrecht, NL",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 207,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular"
+   ],
+   "stats": {
+    "wins": 3,
+    "matches": 11,
+    "podiums": 4,
+    "votes": 99,
+    "avgScore": 3.9
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1782216691706,
+   "lastSeen": 1792497802039,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_da8857cdf09b1d0a96",
+   "username": "TopoQueen",
+   "email": "topoqueen@blendbattles.demo",
+   "rank": {
+    "name": "Modeler",
+    "min": 1600,
+    "color": "#4fd1c5",
+    "icon": "◒"
+   },
+   "xp": 2140,
+   "level": 9,
+   "region": "APAC",
+   "location": "Osaka, JP",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 244,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular"
+   ],
+   "stats": {
+    "wins": 3,
+    "matches": 5,
+    "podiums": 3,
+    "votes": 71,
+    "avgScore": 4.5
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1782994291706,
+   "lastSeen": 1792497718358,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_80965b706d33101f10",
+   "username": "alphaTestAsh",
+   "email": "alphatestash@blendbattles.demo",
+   "rank": {
+    "name": "Apprentice",
+    "min": 600,
+    "color": "#6f8cff",
+    "icon": "◑"
+   },
+   "xp": 1560,
+   "level": 7,
+   "region": "NA",
+   "location": "Denver, US",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 46,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood",
+    "regular"
+   ],
+   "stats": {
+    "wins": 4,
+    "matches": 5,
+    "podiums": 2,
+    "votes": 52,
+    "avgScore": 4.2
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1783771891706,
+   "lastSeen": 1792498147460,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_bb68a8dbbeb0c30d82",
+   "username": "SuzanneStan",
+   "email": "suzannestan@blendbattles.demo",
+   "rank": {
+    "name": "Apprentice",
+    "min": 600,
+    "color": "#6f8cff",
+    "icon": "◑"
+   },
+   "xp": 980,
+   "level": 4,
+   "region": "EU",
+   "location": "Vilnius, LT",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 37,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood"
+   ],
+   "stats": {
+    "wins": 1,
+    "matches": 4,
+    "podiums": 1,
+    "votes": 33,
+    "avgScore": 3.3
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1784549491706,
+   "lastSeen": 1792498073204,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  },
+  {
+   "id": "usr_febe760b57ff1206d4",
+   "username": "lowPolyLuna",
+   "email": "lowpolyluna@blendbattles.demo",
+   "rank": {
+    "name": "Beginner",
+    "min": 0,
+    "color": "#8b93a7",
+    "icon": "◐"
+   },
+   "xp": 520,
+   "level": 3,
+   "region": "EU",
+   "location": "Helsinki, FI",
+   "isMod": false,
+   "isGuest": false,
+   "isDemo": true,
+   "avatarHue": 234,
+   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "badges": [
+    "first-blood"
+   ],
+   "stats": {
+    "wins": 2,
+    "matches": 4,
+    "podiums": 1,
+    "votes": 17,
+    "avgScore": 3.5
+   },
+   "friends": [],
+   "blocked": [],
+   "privacy": {
+    "showHistory": true,
+    "friendsOnlyLeaderboard": false
+   },
+   "settings": {
+    "sfx": true,
+    "reducedMotion": false
+   },
+   "createdAt": 1785327091706,
+   "lastSeen": 1792497795928,
+   "pass": "f45273f718a821e225fa8a304f48af316ed33b683aebe3fefe1292a5ec4bb17b301488ae2a942130227359d0aab53efaeb77d42bc2bd21909c1773b0ba8b69ef",
+   "salt": "5b6d396016fe7cf314cc3537da6ec3b0"
+  }
+ ],
+ "sessions": {},
+ "lobbies": [],
+ "matches": [
+  {
+   "id": "mat_ef3b13923e0a151326",
+   "code": "SEED1",
+   "mode": "build",
+   "modeName": "Build Battle",
+   "theme": "Cute Robot",
+   "difficulty": "medium",
+   "practice": false,
+   "phase": "results",
+   "createdAt": 1792411891706,
+   "startedAt": 1792411891706,
+   "phaseEndsAt": 1792412236706,
+   "endedAt": 1792412291706,
+   "seed": true,
+   "players": [
+    {
+     "userId": "usr_88aa45400e7907bfc5",
+     "name": "NovaKite",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1792411891706
+    },
+    {
+     "userId": "usr_e941780cf573ded3be",
+     "name": "vertexVixen",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1792411891706
+    },
+    {
+     "userId": "usr_bb68a8dbbeb0c30d82",
+     "name": "SuzanneStan",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1792411891706
+    }
+   ],
+   "settings": {
+    "buildSeconds": 300,
+    "votingSeconds": 45,
+    "maxPlayers": 12
+   },
+   "results": {
+    "computedAt": 1792412291706,
+    "podium": [
+     {
+      "place": 1,
+      "submissionId": "sub_ef9277c59d0a15b80e",
+      "userId": "usr_88aa45400e7907bfc5",
+      "username": "NovaKite",
+      "avgScore": 4.75,
+      "voteCount": 4,
+      "xpAwarded": 250,
+      "renderUrl": "/img/featured/cute-robot-a.jpg"
+     },
+     {
+      "place": 2,
+      "submissionId": "sub_04a41e399a5d19edbc",
+      "userId": "usr_e941780cf573ded3be",
+      "username": "vertexVixen",
+      "avgScore": 4,
+      "voteCount": 4,
+      "xpAwarded": 160,
+      "renderUrl": "/img/featured/cute-robot-b.jpg"
+     },
+     {
+      "place": 3,
+      "submissionId": "sub_7c31e060c59148367f",
+      "userId": "usr_bb68a8dbbeb0c30d82",
+      "username": "SuzanneStan",
+      "avgScore": 3.5,
+      "voteCount": 4,
+      "xpAwarded": 100,
+      "renderUrl": "/img/featured/cute-robot-c.jpg"
+     }
+    ],
+    "entries": [
+     {
+      "place": 1,
+      "submissionId": "sub_ef9277c59d0a15b80e",
+      "userId": "usr_88aa45400e7907bfc5",
+      "username": "NovaKite",
+      "avgScore": 4.75,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/cute-robot-a.jpg",
+      "title": "Bolt-9 Service Unit"
+     },
+     {
+      "place": 2,
+      "submissionId": "sub_04a41e399a5d19edbc",
+      "userId": "usr_e941780cf573ded3be",
+      "username": "vertexVixen",
+      "avgScore": 4,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/cute-robot-b.jpg",
+      "title": "Mochi Maintenance Bot"
+     },
+     {
+      "place": 3,
+      "submissionId": "sub_7c31e060c59148367f",
+      "userId": "usr_bb68a8dbbeb0c30d82",
+      "username": "SuzanneStan",
+      "avgScore": 3.5,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/cute-robot-c.jpg",
+      "title": "Rusty Helper"
+     }
+    ]
+   },
+   "abandoned": false
+  },
+  {
+   "id": "mat_acbf796764a98d0ff0",
+   "code": "SEED2",
+   "mode": "build",
+   "modeName": "Build Battle",
+   "theme": "Cyberpunk Car",
+   "difficulty": "medium",
+   "practice": false,
+   "phase": "results",
+   "createdAt": 1792239091710,
+   "startedAt": 1792239091710,
+   "phaseEndsAt": 1792239436710,
+   "endedAt": 1792239491710,
+   "seed": true,
+   "players": [
+    {
+     "userId": "usr_b336ff8eef933f3182",
+     "name": "polyPunk",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1792239091710
+    },
+    {
+     "userId": "usr_a9896cf223a0e77252",
+     "name": "GreyscaleGoblin",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1792239091710
+    },
+    {
+     "userId": "usr_d973e42b693d15064d",
+     "name": "claymoreKid",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1792239091710
+    }
+   ],
+   "settings": {
+    "buildSeconds": 300,
+    "votingSeconds": 45,
+    "maxPlayers": 12
+   },
+   "results": {
+    "computedAt": 1792239491710,
+    "podium": [
+     {
+      "place": 1,
+      "submissionId": "sub_227d3b9266c89e20ae",
+      "userId": "usr_b336ff8eef933f3182",
+      "username": "polyPunk",
+      "avgScore": 4.75,
+      "voteCount": 4,
+      "xpAwarded": 250,
+      "renderUrl": "/img/featured/cyberpunk-car-a.jpg"
+     },
+     {
+      "place": 2,
+      "submissionId": "sub_f6b412fb581027f739",
+      "userId": "usr_a9896cf223a0e77252",
+      "username": "GreyscaleGoblin",
+      "avgScore": 4.25,
+      "voteCount": 4,
+      "xpAwarded": 160,
+      "renderUrl": "/img/featured/cyberpunk-car-b.jpg"
+     },
+     {
+      "place": 3,
+      "submissionId": "sub_bd0cdae4c316bd5467",
+      "userId": "usr_d973e42b693d15064d",
+      "username": "claymoreKid",
+      "avgScore": 3.75,
+      "voteCount": 4,
+      "xpAwarded": 100,
+      "renderUrl": "/img/featured/cyberpunk-car-c.jpg"
+     }
+    ],
+    "entries": [
+     {
+      "place": 1,
+      "submissionId": "sub_227d3b9266c89e20ae",
+      "userId": "usr_b336ff8eef933f3182",
+      "username": "polyPunk",
+      "avgScore": 4.75,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/cyberpunk-car-a.jpg",
+      "title": "Kitsune GT"
+     },
+     {
+      "place": 2,
+      "submissionId": "sub_f6b412fb581027f739",
+      "userId": "usr_a9896cf223a0e77252",
+      "username": "GreyscaleGoblin",
+      "avgScore": 4.25,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/cyberpunk-car-b.jpg",
+      "title": "Nightshift Hover"
+     },
+     {
+      "place": 3,
+      "submissionId": "sub_bd0cdae4c316bd5467",
+      "userId": "usr_d973e42b693d15064d",
+      "username": "claymoreKid",
+      "avgScore": 3.75,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/cyberpunk-car-c.jpg",
+      "title": "Chrome Drift"
+     }
+    ]
+   },
+   "abandoned": false
+  },
+  {
+   "id": "mat_4054f95c07d71bbb12",
+   "code": "SEED3",
+   "mode": "build",
+   "modeName": "Build Battle",
+   "theme": "Fantasy Sword",
+   "difficulty": "medium",
+   "practice": false,
+   "phase": "results",
+   "createdAt": 1791979891711,
+   "startedAt": 1791979891711,
+   "phaseEndsAt": 1791980236711,
+   "endedAt": 1791980291711,
+   "seed": true,
+   "players": [
+    {
+     "userId": "usr_77e9c7158fd66c9ca1",
+     "name": "subdivSam",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1791979891711
+    },
+    {
+     "userId": "usr_1f65b21de105deda97",
+     "name": "modvex",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1791979891711
+    },
+    {
+     "userId": "usr_d27000447d87569504",
+     "name": "NurbsNerd",
+     "isBot": false,
+     "demo": true,
+     "submitted": true,
+     "connected": false,
+     "joinedAt": 1791979891711
+    }
+   ],
+   "settings": {
+    "buildSeconds": 300,
+    "votingSeconds": 45,
+    "maxPlayers": 12
+   },
+   "results": {
+    "computedAt": 1791980291711,
+    "podium": [
+     {
+      "place": 1,
+      "submissionId": "sub_ea855d8690200c9c38",
+      "userId": "usr_77e9c7158fd66c9ca1",
+      "username": "subdivSam",
+      "avgScore": 4.5,
+      "voteCount": 4,
+      "xpAwarded": 250,
+      "renderUrl": "/img/featured/fantasy-sword-a.jpg"
+     },
+     {
+      "place": 2,
+      "submissionId": "sub_a48b524fd551e2f275",
+      "userId": "usr_1f65b21de105deda97",
+      "username": "modvex",
+      "avgScore": 4.25,
+      "voteCount": 4,
+      "xpAwarded": 160,
+      "renderUrl": "/img/featured/fantasy-sword-b.jpg"
+     },
+     {
+      "place": 3,
+      "submissionId": "sub_5542a3eae05c51eb8b",
+      "userId": "usr_d27000447d87569504",
+      "username": "NurbsNerd",
+      "avgScore": 3.75,
+      "voteCount": 4,
+      "xpAwarded": 100,
+      "renderUrl": "/img/featured/fantasy-sword-c.jpg"
+     }
+    ],
+    "entries": [
+     {
+      "place": 1,
+      "submissionId": "sub_ea855d8690200c9c38",
+      "userId": "usr_77e9c7158fd66c9ca1",
+      "username": "subdivSam",
+      "avgScore": 4.5,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/fantasy-sword-a.jpg",
+      "title": "Oath of Embers"
+     },
+     {
+      "place": 2,
+      "submissionId": "sub_a48b524fd551e2f275",
+      "userId": "usr_1f65b21de105deda97",
+      "username": "modvex",
+      "avgScore": 4.25,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/fantasy-sword-b.jpg",
+      "title": "Tidebiter"
+     },
+     {
+      "place": 3,
+      "submissionId": "sub_5542a3eae05c51eb8b",
+      "userId": "usr_d27000447d87569504",
+      "username": "NurbsNerd",
+      "avgScore": 3.75,
+      "voteCount": 4,
+      "disqualified": false,
+      "renderUrl": "/img/featured/fantasy-sword-c.jpg",
+      "title": "Hollow Bloom"
+     }
+    ]
+   },
+   "abandoned": false
+  }
+ ],
+ "submissions": [
+  {
+   "id": "sub_ef9277c59d0a15b80e",
+   "matchId": "mat_ef3b13923e0a151326",
+   "userId": "usr_88aa45400e7907bfc5",
+   "username": "NovaKite",
+   "title": "Bolt-9 Service Unit",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1792411951706,
+   "submittedAt": 1792412131706,
+   "files": {
+    "render": {
+     "name": "cute-robot-a.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/cute-robot-a.jpg",
+     "uploadedAt": 1792412131706
+    },
+    "proof": {
+     "name": "NovaKite_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_ef9277c59d0a15b80e.svg",
+     "uploadedAt": 1792412131706
+    }
+   },
+   "avgScore": 4.75,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1792411951706,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1792412131706,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_04a41e399a5d19edbc",
+   "matchId": "mat_ef3b13923e0a151326",
+   "userId": "usr_e941780cf573ded3be",
+   "username": "vertexVixen",
+   "title": "Mochi Maintenance Bot",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1792411971706,
+   "submittedAt": 1792412143706,
+   "files": {
+    "render": {
+     "name": "cute-robot-b.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/cute-robot-b.jpg",
+     "uploadedAt": 1792412143706
+    },
+    "proof": {
+     "name": "vertexVixen_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_04a41e399a5d19edbc.svg",
+     "uploadedAt": 1792412143706
+    }
+   },
+   "avgScore": 4,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1792411971706,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1792412143706,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_7c31e060c59148367f",
+   "matchId": "mat_ef3b13923e0a151326",
+   "userId": "usr_bb68a8dbbeb0c30d82",
+   "username": "SuzanneStan",
+   "title": "Rusty Helper",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1792411991706,
+   "submittedAt": 1792412155706,
+   "files": {
+    "render": {
+     "name": "cute-robot-c.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/cute-robot-c.jpg",
+     "uploadedAt": 1792412155706
+    },
+    "proof": {
+     "name": "SuzanneStan_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_7c31e060c59148367f.svg",
+     "uploadedAt": 1792412155706
+    }
+   },
+   "avgScore": 3.5,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1792411991706,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1792412155706,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_227d3b9266c89e20ae",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "userId": "usr_b336ff8eef933f3182",
+   "username": "polyPunk",
+   "title": "Kitsune GT",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1792239151710,
+   "submittedAt": 1792239331710,
+   "files": {
+    "render": {
+     "name": "cyberpunk-car-a.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/cyberpunk-car-a.jpg",
+     "uploadedAt": 1792239331710
+    },
+    "proof": {
+     "name": "polyPunk_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_227d3b9266c89e20ae.svg",
+     "uploadedAt": 1792239331710
+    }
+   },
+   "avgScore": 4.75,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1792239151710,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1792239331710,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_f6b412fb581027f739",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "userId": "usr_a9896cf223a0e77252",
+   "username": "GreyscaleGoblin",
+   "title": "Nightshift Hover",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1792239171710,
+   "submittedAt": 1792239343710,
+   "files": {
+    "render": {
+     "name": "cyberpunk-car-b.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/cyberpunk-car-b.jpg",
+     "uploadedAt": 1792239343710
+    },
+    "proof": {
+     "name": "GreyscaleGoblin_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_f6b412fb581027f739.svg",
+     "uploadedAt": 1792239343710
+    }
+   },
+   "avgScore": 4.25,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1792239171710,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1792239343710,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_bd0cdae4c316bd5467",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "userId": "usr_d973e42b693d15064d",
+   "username": "claymoreKid",
+   "title": "Chrome Drift",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1792239191710,
+   "submittedAt": 1792239355710,
+   "files": {
+    "render": {
+     "name": "cyberpunk-car-c.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/cyberpunk-car-c.jpg",
+     "uploadedAt": 1792239355710
+    },
+    "proof": {
+     "name": "claymoreKid_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_bd0cdae4c316bd5467.svg",
+     "uploadedAt": 1792239355710
+    }
+   },
+   "avgScore": 3.75,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1792239191710,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1792239355710,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_ea855d8690200c9c38",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "userId": "usr_77e9c7158fd66c9ca1",
+   "username": "subdivSam",
+   "title": "Oath of Embers",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1791979951711,
+   "submittedAt": 1791980131711,
+   "files": {
+    "render": {
+     "name": "fantasy-sword-a.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/fantasy-sword-a.jpg",
+     "uploadedAt": 1791980131711
+    },
+    "proof": {
+     "name": "subdivSam_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_ea855d8690200c9c38.svg",
+     "uploadedAt": 1791980131711
+    }
+   },
+   "avgScore": 4.5,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1791979951711,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1791980131711,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_a48b524fd551e2f275",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "userId": "usr_1f65b21de105deda97",
+   "username": "modvex",
+   "title": "Tidebiter",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1791979971711,
+   "submittedAt": 1791980143711,
+   "files": {
+    "render": {
+     "name": "fantasy-sword-b.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/fantasy-sword-b.jpg",
+     "uploadedAt": 1791980143711
+    },
+    "proof": {
+     "name": "modvex_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_a48b524fd551e2f275.svg",
+     "uploadedAt": 1791980143711
+    }
+   },
+   "avgScore": 4.25,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1791979971711,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1791980143711,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  },
+  {
+   "id": "sub_5542a3eae05c51eb8b",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "userId": "usr_d27000447d87569504",
+   "username": "NurbsNerd",
+   "title": "Hollow Bloom",
+   "status": "submitted",
+   "reviewStatus": "clear",
+   "createdAt": 1791979991711,
+   "submittedAt": 1791980155711,
+   "files": {
+    "render": {
+     "name": "fantasy-sword-c.jpg",
+     "mime": "image/jpeg",
+     "size": 0,
+     "url": "/img/featured/fantasy-sword-c.jpg",
+     "uploadedAt": 1791980155711
+    },
+    "proof": {
+     "name": "NurbsNerd_viewport_proof.png",
+     "mime": "image/svg+xml",
+     "size": 0,
+     "path": "seed-proof-sub_5542a3eae05c51eb8b.svg",
+     "uploadedAt": 1791980155711
+    }
+   },
+   "avgScore": 3.75,
+   "voteCount": 4,
+   "disqualified": false,
+   "auditTrail": [
+    {
+     "at": 1791979991711,
+     "action": "created",
+     "note": "Entry draft opened"
+    },
+    {
+     "at": 1791980155711,
+     "action": "submitted",
+     "note": "Final render + viewport proof received"
+    }
+   ]
+  }
+ ],
+ "votes": [
+  {
+   "id": "vote_8307ad57e113d48d9c",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_ef9277c59d0a15b80e",
+   "voterId": "usr_b336ff8eef933f3182",
+   "voterName": "polyPunk",
+   "score": 5,
+   "createdAt": 1792412191706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_3705f0fbeba48e904a",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_ef9277c59d0a15b80e",
+   "voterId": "usr_e941780cf573ded3be",
+   "voterName": "vertexVixen",
+   "score": 5,
+   "createdAt": 1792412194706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_f61128a66ca48ac907",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_ef9277c59d0a15b80e",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 4,
+   "createdAt": 1792412197706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_7ddc2f9fa616862990",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_ef9277c59d0a15b80e",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 5,
+   "createdAt": 1792412200706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_53db07b42c24c3948a",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_04a41e399a5d19edbc",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 4,
+   "createdAt": 1792412194706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_2fb67f9b47124fab2c",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_04a41e399a5d19edbc",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 4,
+   "createdAt": 1792412197706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_483dda673a2655f3c2",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_04a41e399a5d19edbc",
+   "voterId": "usr_a9896cf223a0e77252",
+   "voterName": "GreyscaleGoblin",
+   "score": 3,
+   "createdAt": 1792412200706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_765e731f8b08e0aeca",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_7c31e060c59148367f",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 3,
+   "createdAt": 1792412191706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_110531ef3c0cf669c2",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_7c31e060c59148367f",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 4,
+   "createdAt": 1792412194706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_e86fae15bbdd0f634e",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_7c31e060c59148367f",
+   "voterId": "usr_a9896cf223a0e77252",
+   "voterName": "GreyscaleGoblin",
+   "score": 3,
+   "createdAt": 1792412197706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_87609f6d37915f5c48",
+   "matchId": "mat_ef3b13923e0a151326",
+   "submissionId": "sub_7c31e060c59148367f",
+   "voterId": "usr_84408acb6f1c83bc89",
+   "voterName": "BloomShift",
+   "score": 4,
+   "createdAt": 1792412200706,
+   "invalidated": false
+  },
+  {
+   "id": "vote_acb438b6ad48d65ff6",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_227d3b9266c89e20ae",
+   "voterId": "usr_e941780cf573ded3be",
+   "voterName": "vertexVixen",
+   "score": 5,
+   "createdAt": 1792239394710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_7859b3d44ee8d9a0b1",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_227d3b9266c89e20ae",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 5,
+   "createdAt": 1792239397710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_b30abf71528b4000ec",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_227d3b9266c89e20ae",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 4,
+   "createdAt": 1792239400710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_8b544111f46ceb9b68",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_f6b412fb581027f739",
+   "voterId": "usr_e941780cf573ded3be",
+   "voterName": "vertexVixen",
+   "score": 4,
+   "createdAt": 1792239391710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_b60ef8e055ad89e44a",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_f6b412fb581027f739",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 5,
+   "createdAt": 1792239394710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_b883312a5ac7fdce95",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_f6b412fb581027f739",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 4,
+   "createdAt": 1792239397710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_c0efeeca2a88f9eee6",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_bd0cdae4c316bd5467",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 3,
+   "createdAt": 1792239391710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_e0672159aaf5c90b88",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_bd0cdae4c316bd5467",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 3,
+   "createdAt": 1792239394710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_cb60190943a1aa7f4a",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_bd0cdae4c316bd5467",
+   "voterId": "usr_a9896cf223a0e77252",
+   "voterName": "GreyscaleGoblin",
+   "score": 4,
+   "createdAt": 1792239397710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_fbf326a76bed618497",
+   "matchId": "mat_acbf796764a98d0ff0",
+   "submissionId": "sub_bd0cdae4c316bd5467",
+   "voterId": "usr_84408acb6f1c83bc89",
+   "voterName": "BloomShift",
+   "score": 5,
+   "createdAt": 1792239400710,
+   "invalidated": false
+  },
+  {
+   "id": "vote_768c0ef03530ba902d",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_ea855d8690200c9c38",
+   "voterId": "usr_b336ff8eef933f3182",
+   "voterName": "polyPunk",
+   "score": 5,
+   "createdAt": 1791980191711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_b078b3bf213e413b93",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_ea855d8690200c9c38",
+   "voterId": "usr_e941780cf573ded3be",
+   "voterName": "vertexVixen",
+   "score": 4,
+   "createdAt": 1791980194711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_bce2342453d06f5d2e",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_ea855d8690200c9c38",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 5,
+   "createdAt": 1791980197711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_6e9c0941f071baf7ca",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_a48b524fd551e2f275",
+   "voterId": "usr_e941780cf573ded3be",
+   "voterName": "vertexVixen",
+   "score": 4,
+   "createdAt": 1791980191711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_e9de145d5c5e46bf49",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_a48b524fd551e2f275",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 5,
+   "createdAt": 1791980197711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_8dc15dc95d4306e975",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_a48b524fd551e2f275",
+   "voterId": "usr_a9896cf223a0e77252",
+   "voterName": "GreyscaleGoblin",
+   "score": 4,
+   "createdAt": 1791980200711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_39a29d3306277b6358",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_5542a3eae05c51eb8b",
+   "voterId": "usr_1f65b21de105deda97",
+   "voterName": "modvex",
+   "score": 3,
+   "createdAt": 1791980191711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_7251ae0a935e2a1fa9",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_5542a3eae05c51eb8b",
+   "voterId": "usr_77e9c7158fd66c9ca1",
+   "voterName": "subdivSam",
+   "score": 4,
+   "createdAt": 1791980194711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_0e52eae6751b78c51b",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_5542a3eae05c51eb8b",
+   "voterId": "usr_a9896cf223a0e77252",
+   "voterName": "GreyscaleGoblin",
+   "score": 4,
+   "createdAt": 1791980197711,
+   "invalidated": false
+  },
+  {
+   "id": "vote_08119e963e7bdf409e",
+   "matchId": "mat_4054f95c07d71bbb12",
+   "submissionId": "sub_5542a3eae05c51eb8b",
+   "voterId": "usr_84408acb6f1c83bc89",
+   "voterName": "BloomShift",
+   "score": 4,
+   "createdAt": 1791980200711,
+   "invalidated": false
+  }
+ ],
+ "reports": [],
+ "audit": [],
+ "activity": [
+  {
+   "id": "act_fee753a71313b14de1",
+   "at": 1792498291714,
+   "type": "seed",
+   "text": "Demo ladder seeded with past matches and gallery entries."
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2b2b31"/><stop offset="100%" stop-color="#1c1c21"/></linearGradient>
+    <linearGradient id="vp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3a3f47"/><stop offset="100%" stop-color="#22262b"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="#1b1b1f"/>
+  <!-- top bar -->
+  <rect width="1200" height="34" fill="url(#chrome)"/>
+  <text x="14" y="22" font-family="Inter,sans-serif" font-size="13" fill="#e6e6ea">File · Edit · Render · Window · Help</text>
+  <text x="600" y="22" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#8e919c">Fantasy Sword.blend</text>
+  <text x="1186" y="22" text-anchor="end" font-family="Inter,sans-serif" font-size="12" fill="#6f7280">Blender 4.2 — Viewport Proof</text>
+  <!-- tool shelf -->
+  <rect y="34" width="42" height="726" fill="url(#chrome)"/>
+  <text x="21" y="74" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">⬚</text><text x="21" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">⬡</text><text x="21" y="154" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">◯</text><text x="21" y="194" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">✥</text><text x="21" y="234" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">↻</text><text x="21" y="274" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">⤢</text><text x="21" y="314" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" fill="#a9adba">✎</text>
+  <!-- viewport -->
+  <rect x="42" y="34" width="880" height="640" fill="url(#vp)"/>
+  <g opacity="0.5">
+    <line x1="42" y1="34" x2="42" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="94" y1="34" x2="94" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="146" y1="34" x2="146" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="198" y1="34" x2="198" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="250" y1="34" x2="250" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="302" y1="34" x2="302" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="354" y1="34" x2="354" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="406" y1="34" x2="406" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="458" y1="34" x2="458" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="510" y1="34" x2="510" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="562" y1="34" x2="562" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="614" y1="34" x2="614" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="666" y1="34" x2="666" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="718" y1="34" x2="718" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="770" y1="34" x2="770" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="822" y1="34" x2="822" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="874" y1="34" x2="874" y2="674" stroke="#ffffff" stroke-opacity="0.045"/><line x1="926" y1="34" x2="926" y2="674" stroke="#ffffff" stroke-opacity="0.045"/>
+    <line x1="42" y1="34" x2="922" y2="34" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="86" x2="922" y2="86" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="138" x2="922" y2="138" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="190" x2="922" y2="190" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="242" x2="922" y2="242" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="294" x2="922" y2="294" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="346" x2="922" y2="346" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="398" x2="922" y2="398" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="450" x2="922" y2="450" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="502" x2="922" y2="502" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="554" x2="922" y2="554" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="606" x2="922" y2="606" stroke="#ffffff" stroke-opacity="0.045"/><line x1="42" y1="658" x2="922" y2="658" stroke="#ffffff" stroke-opacity="0.045"/>
+  </g>
+  <text x="60" y="58" font-family="Inter,sans-serif" font-size="13" fill="#cfd3dc" opacity="0.85">User Perspective</text>
+  <text x="60" y="78" font-family="Inter,sans-serif" font-size="12" fill="#8e919c" opacity="0.8">Solid Mode · 1,284,502 verts · 2,731 faces</text>
+  <polygon points="598,344 636,367 590,382" fill="#ff9a3d" fill-opacity="0.32" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="412,293 440,310 407,320" fill="#ff9a3d" fill-opacity="0.12" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="535,313 572,335 527,350" fill="#ff9a3d" fill-opacity="0.23" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="291,240 329,264 283,279" fill="#ff9a3d" fill-opacity="0.35" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="598,312 665,353 584,380" fill="#ff9a3d" fill-opacity="0.23" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="283,434 318,455 276,469" fill="#ff9a3d" fill-opacity="0.28" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="453,217 505,249 443,269" fill="#ff9a3d" fill-opacity="0.41" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="320,419 367,448 310,467" fill="#ff9a3d" fill-opacity="0.20" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="409,259 450,284 401,300" fill="#ff9a3d" fill-opacity="0.38" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="475,203 535,239 463,263" fill="#ff9a3d" fill-opacity="0.27" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="434,326 463,343 429,355" fill="#ff9a3d" fill-opacity="0.24" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="280,249 341,286 268,310" fill="#ff9a3d" fill-opacity="0.33" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="494,304 523,322 488,334" fill="#ff9a3d" fill-opacity="0.37" stroke="#ffb457" stroke-opacity="0.5"/>
+  <polygon points="356,208 387,226 350,239" fill="#ff9a3d" fill-opacity="0.22" stroke="#ffb457" stroke-opacity="0.5"/>
+  <line x1="488" y1="181" x2="546" y2="237" stroke="#7fd4ff" stroke-opacity="0.32" stroke-width="1"/>
+  <line x1="570" y1="257" x2="609" y2="287" stroke="#7fd4ff" stroke-opacity="0.67" stroke-width="1"/>
+  <line x1="429" y1="359" x2="510" y2="431" stroke="#7fd4ff" stroke-opacity="0.59" stroke-width="1"/>
+  <line x1="290" y1="393" x2="360" y2="447" stroke="#7fd4ff" stroke-opacity="0.57" stroke-width="1"/>
+  <line x1="388" y1="240" x2="416" y2="297" stroke="#7fd4ff" stroke-opacity="0.54" stroke-width="1"/>
+  <line x1="522" y1="349" x2="569" y2="345" stroke="#7fd4ff" stroke-opacity="0.66" stroke-width="1"/>
+  <line x1="295" y1="390" x2="323" y2="339" stroke="#7fd4ff" stroke-opacity="0.26" stroke-width="1"/>
+  <line x1="457" y1="471" x2="496" y2="400" stroke="#7fd4ff" stroke-opacity="0.32" stroke-width="1"/>
+  <line x1="256" y1="427" x2="264" y2="352" stroke="#7fd4ff" stroke-opacity="0.38" stroke-width="1"/>
+  <line x1="469" y1="425" x2="465" y2="403" stroke="#7fd4ff" stroke-opacity="0.46" stroke-width="1"/>
+  <line x1="439" y1="304" x2="369" y2="296" stroke="#7fd4ff" stroke-opacity="0.36" stroke-width="1"/>
+  <line x1="605" y1="278" x2="673" y2="332" stroke="#7fd4ff" stroke-opacity="0.61" stroke-width="1"/>
+  <line x1="638" y1="395" x2="601" y2="438" stroke="#7fd4ff" stroke-opacity="0.60" stroke-width="1"/>
+  <line x1="297" y1="212" x2="212" y2="179" stroke="#7fd4ff" stroke-opacity="0.29" stroke-width="1"/>
+  <line x1="468" y1="292" x2="480" y2="299" stroke="#7fd4ff" stroke-opacity="0.35" stroke-width="1"/>
+  <line x1="333" y1="411" x2="380" y2="356" stroke="#7fd4ff" stroke-opacity="0.39" stroke-width="1"/>
+  <line x1="547" y1="388" x2="585" y2="356" stroke="#7fd4ff" stroke-opacity="0.57" stroke-width="1"/>
+  <line x1="254" y1="194" x2="284" y2="170" stroke="#7fd4ff" stroke-opacity="0.53" stroke-width="1"/>
+  <line x1="570" y1="321" x2="487" y2="346" stroke="#7fd4ff" stroke-opacity="0.54" stroke-width="1"/>
+  <line x1="471" y1="266" x2="482" y2="278" stroke="#7fd4ff" stroke-opacity="0.58" stroke-width="1"/>
+  <line x1="377" y1="182" x2="357" y2="198" stroke="#7fd4ff" stroke-opacity="0.52" stroke-width="1"/>
+  <line x1="289" y1="212" x2="280" y2="246" stroke="#7fd4ff" stroke-opacity="0.26" stroke-width="1"/>
+  <line x1="493" y1="286" x2="427" y2="229" stroke="#7fd4ff" stroke-opacity="0.65" stroke-width="1"/>
+  <line x1="479" y1="224" x2="550" y2="274" stroke="#7fd4ff" stroke-opacity="0.29" stroke-width="1"/>
+  <line x1="469" y1="343" x2="540" y2="290" stroke="#7fd4ff" stroke-opacity="0.49" stroke-width="1"/>
+  <line x1="387" y1="440" x2="454" y2="474" stroke="#7fd4ff" stroke-opacity="0.20" stroke-width="1"/>
+  <line x1="298" y1="291" x2="366" y2="349" stroke="#7fd4ff" stroke-opacity="0.66" stroke-width="1"/>
+  <line x1="270" y1="346" x2="305" y2="386" stroke="#7fd4ff" stroke-opacity="0.46" stroke-width="1"/>
+  <line x1="268" y1="388" x2="343" y2="327" stroke="#7fd4ff" stroke-opacity="0.61" stroke-width="1"/>
+  <line x1="255" y1="302" x2="294" y2="248" stroke="#7fd4ff" stroke-opacity="0.53" stroke-width="1"/>
+  <line x1="617" y1="319" x2="554" y2="379" stroke="#7fd4ff" stroke-opacity="0.36" stroke-width="1"/>
+  <line x1="327" y1="345" x2="310" y2="292" stroke="#7fd4ff" stroke-opacity="0.56" stroke-width="1"/>
+  <line x1="386" y1="381" x2="310" y2="362" stroke="#7fd4ff" stroke-opacity="0.63" stroke-width="1"/>
+  <line x1="626" y1="420" x2="575" y2="442" stroke="#7fd4ff" stroke-opacity="0.39" stroke-width="1"/>
+  <!-- gizmo -->
+  <g transform="translate(860 604)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#ff5c5c" stroke-width="3"/><text x="44" y="4" font-family="Inter,sans-serif" font-size="11" fill="#ff8a8a">X</text>
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#5cff9d" stroke-width="3"/><text x="-3" y="-46" font-family="Inter,sans-serif" font-size="11" fill="#8affc0">Z</text>
+    <line x1="0" y1="0" x2="-26" y2="26" stroke="#5c9dff" stroke-width="3"/><text x="-46" y="40" font-family="Inter,sans-serif" font-size="11" fill="#9dc2ff">Y</text>
+  </g>
+  <text x="60" y="630" font-family="Inter,sans-serif" font-size="13" fill="#e8a33d">⬤ Edit Mode — Mesh (vertex select)</text>
+  <text x="60" y="652" font-family="Inter,sans-serif" font-size="12" fill="#9aa0ad">Theme: Fantasy Sword · rotated model to show geometry</text>
+  <!-- outliner -->
+  <rect x="922" y="34" width="278" height="330" fill="#232328"/>
+  <text x="938" y="58" font-family="Inter,sans-serif" font-size="12" fill="#8e919c">OUTLINER</text>
+  <rect x="922" y="68" width="278" height="1" fill="#33333a"/>
+  <text x="946" y="146" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6"><tspan fill="#e8a33d">▣</tspan>  Cube</text><text x="946" y="170" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6"><tspan fill="#e8a33d">▣</tspan>  Camera</text><text x="946" y="194" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6"><tspan fill="#e8a33d">▣</tspan>  Light</text><text x="946" y="218" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6"><tspan fill="#e8a33d">◈</tspan>  Model_Body</text><text x="946" y="242" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6"><tspan fill="#e8a33d">◈</tspan>  Model_Detail</text><text x="946" y="266" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6"><tspan fill="#e8a33d">◈</tspan>  Material_Slot</text>
+  <!-- properties -->
+  <rect x="922" y="364" width="278" height="396" fill="#1f1f24"/>
+  <text x="938" y="388" font-family="Inter,sans-serif" font-size="12" fill="#8e919c">PROPERTIES</text>
+  <text x="938" y="414" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6">▸ Transform</text><text x="938" y="440" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6">▸ Modifiers</text><text x="938" y="466" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6">▸ Material</text><text x="938" y="492" font-family="Inter,sans-serif" font-size="13" fill="#c9cbd6">▸ Render</text>
+  <rect x="938" y="536" width="246" height="72" rx="6" fill="#2b2b31" stroke="#3a3a44"/>
+  <text x="950" y="558" font-family="Inter,sans-serif" font-size="12" fill="#e8a33d">Render Engine</text>
+  <text x="950" y="578" font-family="Inter,sans-serif" font-size="12" fill="#c9cbd6">Cycles · 256 samples</text>
+  <text x="950" y="596" font-family="Inter,sans-serif" font-size="12" fill="#c9cbd6">1920 × 1080 · Denoise</text>
+  <text x="938" y="640" font-family="Inter,sans-serif" font-size="12" fill="#8e919c">Viewport: Solid · Studio Light</text>
+  <text x="938" y="662" font-family="Inter,sans-serif" font-size="12" fill="#8e919c">Author: subdivSam</text>
+  <!-- timeline -->
+  <rect y="674" width="1200" height="86" fill="#18181c"/>
+  <rect x="42" y="690" width="1130" height="26" rx="4" fill="#26262c" stroke="#33333a"/>
+  <line x1="180" y1="686" x2="180" y2="720" stroke="#e8a33d" stroke-width="2"/>
+  <text x="52" y="742" font-family="Inter,sans-serif" font-size="12" fill="#8e919c">Timeline · Frame 1 / 240 · 24 fps</text>
+  <text x="1160" y="742" text-anchor="end" font-family="Inter,sans-serif" font-size="12" fill="#5f636f">SIMULATED DEMO PROOF</text>
+</svg>
