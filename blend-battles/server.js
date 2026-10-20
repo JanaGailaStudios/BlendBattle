@@ -52,6 +52,17 @@ const shuffle = (arr, seedStr) => {
   return a;
 };
 const humanPlayers = (match) => match.players.filter((p) => !p.isBot);
+const safeDecode = (str) => {
+  try { return decodeURIComponent(str); } catch { return String(str); }
+};
+/** The demo is served both from plain http (localhost) and from HTTPS proxies / iframes. */
+function isHttpsRequest(req) {
+  const proto = String(req.headers['x-forwarded-proto'] || '').split(',')[0].trim().toLowerCase();
+  if (proto) return proto === 'https';
+  if (req.socket && req.socket.encrypted) return true;
+  const origin = String(req.headers.origin || req.headers.referer || '');
+  return /^https:\/\//i.test(origin);
+}
 
 function readBody(req, limit = 2 * 1024 * 1024) {
   return new Promise((resolve, reject) => {
@@ -680,11 +691,13 @@ function finishMatch(match, opts = {}) {
       mode: match.modeName,
     },
   };
+  // Reopen the room for another round — practice sessions too, otherwise the
+  // lobby stays stuck "in match" and keeps redirecting to the finished match.
+  setImmediate(() => {
+    const lobby = getLobby(match.code);
+    if (lobby) { lobby.status = 'waiting'; lobby.matchId = null; lobby.startsAt = null; lobby.players.forEach((p) => { p.ready = !!p.isBot; }); pushLobby(lobby); }
+  });
   if (!match.practice) {
-    setImmediate(() => {
-      const lobby = getLobby(match.code);
-      if (lobby) { lobby.status = 'waiting'; lobby.matchId = null; lobby.startsAt = null; lobby.players.forEach((p) => { p.ready = !!p.isBot; }); pushLobby(lobby); }
-    });
     activity({ type: 'results', text: `${entries[0] ? entries[0].displayName : 'Nobody'} won “${match.theme}” — ${entries[0] ? entries[0].avgScore.toFixed(1) : 0}★ average.`, matchId: match.id });
   }
   save();
@@ -1559,7 +1572,9 @@ route('GET', '/api/home', async (ctx) => {
     });
   });
   const winners = finished.slice(0, 5).map((m) => ({
-    username: m.results.entries[0] ? m.results.entries[0].displayName : '—',
+    username: m.results.entries[0]
+      ? (m.results.entries[0].displayName || m.results.entries[0].username || '—')
+      : '—',
     renderUrl: m.results.entries[0] ? m.results.entries[0].renderUrl : null,
     theme: m.theme, mode: m.modeName, endedAt: m.endedAt,
     score: m.results.entries[0] ? m.results.entries[0].avgScore : 0,
@@ -1731,7 +1746,7 @@ function sendJson(res, status, obj) {
 }
 
 function serveStatic(req, res, pathname) {
-  let rel = decodeURIComponent(pathname);
+  let rel = safeDecode(pathname);
   if (rel === '/') rel = '/index.html';
   const filePath = path.normalize(path.join(PUBLIC_DIR, rel));
   if (!filePath.startsWith(PUBLIC_DIR)) {
@@ -1768,8 +1783,14 @@ function serveStatic(req, res, pathname) {
 }
 
 /* ------------------------------------------------------------------- server */
-const server = http.createServer(async (req, res) => {
-  const parsedUrl = new URL(req.url, 'http://localhost');
+async function handleRequest(req, res) {
+  let parsedUrl;
+  try {
+    parsedUrl = new URL(req.url, 'http://localhost');
+  } catch {
+    res.writeHead(400, { 'Content-Type': 'text/plain' }).end('Bad request');
+    return;
+  }
   const pathname = parsedUrl.pathname;
 
   res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -1791,10 +1812,16 @@ const server = http.createServer(async (req, res) => {
       params: {}, query: Object.fromEntries(parsedUrl.searchParams),
       body: {}, user: null,
       setSession(t) {
-        res.setHeader('Set-Cookie', `${auth.SESSION_COOKIE}=${t}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${60 * 60 * 24 * 30}`);
+        // Over HTTPS use SameSite=None; Secure so the session still works inside an
+        // embedded preview iframe. Plain http (localhost) keeps Lax, which is safer.
+        const secure = isHttpsRequest(req);
+        const attrs = `Path=/; HttpOnly; SameSite=${secure ? 'None; Secure' : 'Lax'}`;
+        res.setHeader('Set-Cookie', `${auth.SESSION_COOKIE}=${t}; ${attrs}; Max-Age=${60 * 60 * 24 * 30}`);
       },
       clearSession() {
-        res.setHeader('Set-Cookie', `${auth.SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0`);
+        const secure = isHttpsRequest(req);
+        const attrs = `Path=/; HttpOnly; SameSite=${secure ? 'None; Secure' : 'Lax'}`;
+        res.setHeader('Set-Cookie', `${auth.SESSION_COOKIE}=; ${attrs}; Max-Age=0`);
       },
     };
     ctx.user = auth.userFromRequest(req);
@@ -1803,10 +1830,16 @@ const server = http.createServer(async (req, res) => {
         if (r.method !== req.method) continue;
         const m = r.re.exec(pathname);
         if (!m) continue;
-        r.keys.forEach((k, i) => { ctx.params[k] = decodeURIComponent(m[i + 1]); });
+        r.keys.forEach((k, i) => { ctx.params[k] = safeDecode(m[i + 1]); });
         if (req.method !== 'GET' && req.method !== 'DELETE') {
-          if (!String(req.headers['content-type'] || '').includes('application/octet-stream')) {
+          const contentType = String(req.headers['content-type'] || '').toLowerCase();
+          const isUpload = /\/upload$/.test(pathname);
+          // Upload routes stream their own raw binary body — never consume it here.
+          if (!isUpload && contentType.includes('application/json')) {
             ctx.body = await readBody(req, 256 * 1024);
+          } else if (!isUpload) {
+            // Non-JSON bodies cannot be parsed; drain them so the socket stays reusable.
+            req.resume();
           }
         }
         const result = await r.handler(ctx);
@@ -1858,6 +1891,23 @@ const server = http.createServer(async (req, res) => {
 
   if (req.method === 'GET' || req.method === 'HEAD') return serveStatic(req, res, pathname);
   res.writeHead(405).end('Method not allowed');
+}
+
+const server = http.createServer((req, res) => {
+  handleRequest(req, res).catch((err) => {
+    console.error('[server]', req.method, req.url, err);
+    if (!res.headersSent) {
+      res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Server error');
+    } else {
+      res.destroy();
+    }
+  });
+});
+
+/* A malformed request must never take the whole demo server down. */
+server.on('clientError', (err, socket) => {
+  if (socket.writable) socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
+  else socket.destroy();
 });
 
 server.listen(PORT, '0.0.0.0', () => {

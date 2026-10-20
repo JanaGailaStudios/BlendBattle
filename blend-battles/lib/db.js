@@ -64,7 +64,7 @@ const SEED_PLAYERS = [
   ['NovaKite', 14210, 'EU', 'Riga, LV', true],
   ['polyPunk', 11890, 'EU', 'Berlin, DE', false],
   ['vertexVixen', 9640, 'NA', 'Austin, US', false],
-  ['modvex', 8300, 'EU', 'Tallinn, EE', false],
+  ['modvex', 8300, 'EU', 'Tallinn, EE', true],
   ['subdivSam', 7210, 'NA', 'Toronto, CA', false],
   ['GreyscaleGoblin', 6480, 'EU', 'Lisbon, PT', false],
   ['BloomShift', 5120, 'APAC', 'Seoul, KR', false],

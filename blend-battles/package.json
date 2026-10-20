@@ -1,0 +1,23 @@
+{
+  "name": "blend-battles",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blend Battles — a competitive arena for Blender artists. Zero-dependency Node server with a live match state machine, uploads, voting and moderation.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check lib/db.js && node --check lib/auth.js && node --check lib/render.js && node --check lib/themes.js && node --check lib/util.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "blender",
+    "3d",
+    "competition",
+    "demo",
+    "node"
+  ],
+  "license": "MIT"
+}

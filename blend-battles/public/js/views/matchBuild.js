@@ -157,7 +157,7 @@ export default function renderBuild(root, ctx) {
     if (match.phase === 'submission') {
       el.innerHTML = `<div class="stage-banner stage-banner--submission">⏳ <span><b>Build timer ended.</b> The submission window is open — late uploads still count, but they must finish before the clock reaches zero.</span></div>`;
     } else if (match.practice) {
-      el.innerHTML = `<div class="stage-banner stage-banner--build">🎨 <span><b>Practice room.</b> No timer, no votes. Upload whenever you like and end the session when you are done.</span></div>`;
+      el.innerHTML = `<div class="stage-banner stage-banner--build">🎨 <span><b>Practice room.</b> No timer, no votes. Upload whenever you like and end the session when you are done.</span><button class="btn btn--sm btn--ghost" id="endPractice" style="margin-left:auto;flex:none">End session</button></div>`;
     } else {
       el.innerHTML = '';
     }
@@ -403,6 +403,26 @@ export default function renderBuild(root, ctx) {
   }
 
   /* ------------------------------------------------------------------ actions */
+  root.addEventListener('click', async (event) => {
+    const btn = event.target.closest('#endPractice');
+    if (!btn) return;
+    const ok = await confirmDialog({
+      title: 'End this practice session?',
+      message: 'Your uploads move to a results screen and the session closes. Practice runs never touch your competitive record.',
+      confirmText: 'End session',
+    });
+    if (!ok) return;
+    btn.classList.add('is-loading');
+    try {
+      await api(`/api/matches/${match.id}/end`, { method: 'POST', body: {} });
+      toast('Practice session ended.', { type: 'success' });
+      ctx.refreshSoon(300);
+    } catch (err) {
+      btn.classList.remove('is-loading');
+      toast(err.message, { type: 'error', title: 'Could not end session' });
+    }
+  });
+
   root.querySelector('#finalizeBtn').addEventListener('click', async () => {
     const title = root.querySelector('#entryTitle')?.value.trim() || '';
     const ok = await confirmDialog({

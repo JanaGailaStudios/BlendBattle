@@ -32,10 +32,10 @@ export default async function play(root, params) {
           <div class="row row--wrap" style="justify-content:space-between">
             <div>
               <h3 style="font-size:16px">⚡ Quick play</h3>
-              <p class="note" style="margin-top:4px">Instant lobby with practice bots so you can run a full match solo in ~2 minutes. Bots are clearly labelled in the lobby and on the results screen.</p>
+              <p class="note" style="margin-top:4px">Instant room in any mode. Competitive modes fill with clearly-labelled practice bots so you can run a full match solo; Free Build opens a no-clock practice space.</p>
             </div>
             <div class="row row--wrap" style="gap:8px">
-              ${(state.config?.modes || []).filter((m) => m.key !== 'free').map((m) => `<button class="btn btn--sm btn--ghost" data-quick="${m.key}">${MODE_ICONS[m.key]} ${esc(m.name)}</button>`).join('')}
+              ${(state.config?.modes || []).map((m) => `<button class="btn btn--sm btn--ghost" data-quick="${m.key}">${MODE_ICONS[m.key]} ${esc(m.name)}</button>`).join('')}
             </div>
           </div>
         </div>
