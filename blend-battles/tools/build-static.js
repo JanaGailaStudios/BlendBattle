@@ -82,6 +82,10 @@ function build() {
   // stop GitHub Pages from running the files through Jekyll
   fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 
+  // Skip Jekyll for the repository root as well: the Pages site is plain static files and
+  // Jekyll's processing is both unnecessary and a common source of opaque build failures.
+  fs.writeFileSync(path.join(ROOT, '..', '.nojekyll'), '');
+
   // GitHub Pages for this repository publishes `main` at `/`, so the repository root needs
   // a tiny redirect into the built site (keeps the hash route when deep-linking).
   fs.writeFileSync(path.join(ROOT, '..', 'index.html'), `<!doctype html>
