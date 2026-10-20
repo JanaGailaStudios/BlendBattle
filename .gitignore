@@ -9,3 +9,7 @@ Thumbs.db
 # Runtime state that should not be committed
 blend-battles/data/db.json.tmp
 blend-battles/data/uploads/tmp-*
+
+# Runtime uploads — keep only the seeded demo proof images in git
+blend-battles/data/uploads/*
+!blend-battles/data/uploads/seed-proof-*.svg
