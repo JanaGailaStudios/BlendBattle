@@ -17,6 +17,9 @@ import mod from './views/mod.js';
 import rules from './views/rules.js';
 import tournaments from './views/tournaments.js';
 
+/* Static (GitHub Pages) build: there is no Node server — a browser-local API stands in. */
+const STATIC_BUILD = typeof window !== 'undefined' && !!window.BB_STATIC;
+
 const ROUTES = [
   { re: /^\/$/, view: home },
   { re: /^\/play$/, view: play },
@@ -154,6 +157,10 @@ function bailOutDemoBanner() {
   if (!banner) return;
   if (LS.get('bannerDismissed', false)) { banner.hidden = true; return; }
   banner.hidden = !state.demoMode;
+  if (STATIC_BUILD) {
+    const text = document.getElementById('demoBannerText');
+    if (text) text.innerHTML = '<strong>Static demo on GitHub Pages.</strong> Accounts, lobbies, uploads, votes and moderation all run inside your browser (no server). Timers are compressed about 10× so a full match takes roughly a minute, and uploaded files live only until you close or reload the tab.';
+  }
   document.getElementById('demoBannerClose').addEventListener('click', () => {
     banner.hidden = true;
     LS.set('bannerDismissed', true);
@@ -161,9 +168,12 @@ function bailOutDemoBanner() {
   document.getElementById('demoBannerMore').addEventListener('click', () => {
     openModal({
       title: 'What is real, what is simulated?',
-      sub: 'Blend Battles is running in demo mode on a local Node server.',
+      sub: STATIC_BUILD ? 'Blend Battles is running as a fully browser-local demo.' : 'Blend Battles is running in demo mode on a local Node server.',
       wide: true,
       body: `
+        ${STATIC_BUILD ? `<div class="callout callout--warn" style="margin-bottom:14px">
+          <b>This is the static GitHub Pages build.</b> The real project ships with a Node server (accounts, JSON database, SSE, file storage). Here that server is replaced by <code>js/static-backend.js</code>, which implements the same API in your browser with <code>localStorage</code>. Everything is playable; nothing leaves your device. Uploads are kept in memory only, so a reload clears them.
+        </div>` : ''}
         <div class="grid grid--2">
           <div class="card card--flat">
             <b style="font-size:13.5px;color:#9df5d3">✓ Real, working features</b>

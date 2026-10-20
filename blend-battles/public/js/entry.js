@@ -69,8 +69,9 @@ function wireEntryActions(root, entry, { onReported }) {
       open = !open;
       proofSlot.hidden = !open;
       if (open) {
+        const proofIsVideo = entry.proofKind === 'video' || mediaSrcKind(entry.proofUrl) === 'video';
         proofSlot.innerHTML = entry.proofUrl
-          ? (mediaSrcKind(entry.proofUrl) === 'video'
+          ? (proofIsVideo
             ? `<video src="${esc(entry.proofUrl)}" controls playsinline></video>`
             : `<img src="${esc(entry.proofUrl)}" alt="Blender viewport proof" />`)
           : '<div class="note" style="padding:14px">No viewport proof is attached to this entry.</div>';

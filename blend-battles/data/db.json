@@ -169,16 +169,17 @@
    "level": 34,
    "region": "EU",
    "location": "Tallinn, EE",
-   "isMod": false,
+   "isMod": true,
    "isGuest": false,
    "isDemo": true,
    "avatarHue": 10,
-   "bio": "Blender artist. Renders in Cycles, models in Edit Mode.",
+   "bio": "Community moderator. Reviews proof, kills invalid votes, keeps the ladder honest.",
    "badges": [
     "first-blood",
     "regular",
     "podium-hunter",
-    "legend-track"
+    "legend-track",
+    "moderator"
    ],
    "stats": {
     "wins": 9,
